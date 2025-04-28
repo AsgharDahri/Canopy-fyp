@@ -5,7 +5,7 @@ const { MONGO_URI } = 'mongodb://localhost:27017/Auth-jwt-myversion';
 exports.connect = () => {
   // Connecting to the database
   mongoose
-    .connect('mongodb://localhost:27017/Auth-jwt-myversion', {
+    .connect('mongodb+srv://azeembashir33:5b5uutIf9uH22urq@cluster0.hlf7v23.mongodb.net/', {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     //   useCreateIndex: true,

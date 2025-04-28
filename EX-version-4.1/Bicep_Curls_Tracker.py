@@ -28,10 +28,11 @@ def gf():
     print("Exercise_Builder.py")
 
     # "Resources/man_performing_bicep_curls_micro.mp4"
-    cap = cv2.VideoCapture("Resources/man_performing_bicep_curls_micro.mp4")
+    # cap = cv2.VideoCapture("Resources/man_performing_bicep_curls_micro.mp4")
+    cap = cv2.VideoCapture(0)
 
     detector = pm.PoseDetector()
-    maxCount=3
+    maxCount=5
 
     count = 0
     error_keeper = [1 for i in range(11)]
